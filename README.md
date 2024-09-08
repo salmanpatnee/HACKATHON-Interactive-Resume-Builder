@@ -23,8 +23,23 @@ The first milestone involves creating a static resume builder with the following
 - TypeScript for basic interactive elements.
 
 
+### Milestone 3: Dynamic Resume Builder Form
+
+**Description:**  
+In this milestone, the focus is on developing a form where users can input their resume details, and the resume is generated dynamically based on their input. The form will update the resume in real time, reflecting the changes as the user types. Due to time constraints, only minimal validation has been implemented for one field to ensure basic usability.
+
+**Features Completed:**
+- Real-time resume generation based on user input.
+- Form with fields for user data, dynamically updating the resume preview.
+- Basic validation for one field to handle empty input and prompt the user.
+
+**Limitations:**
+- The validation implemented is minimal due to time constraints, focusing on ensuring that at least one field is filled before allowing users to move to the next field.
+- Future improvements could include more comprehensive validation and additional features to enhance user experience.
+
 **Installation and Setup:**
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/hackathon-static-resume-builder.git
+
