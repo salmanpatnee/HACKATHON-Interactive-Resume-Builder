@@ -72,7 +72,12 @@ h2.fancy-heading {
   text-transform: uppercase;
   font-size: 19px;
 }
-
+.bold {
+  font-weight: bold;
+}
+.mb-0 {
+  margin-bottom: 0;
+}
 /* Header */
 .topbar {
   height: 60px;
@@ -179,6 +184,7 @@ input {
 textarea {
   width: 100%;
   height: 50px;
+  padding: 5px 0 5px 5px;
 }
 .experience .form-field {
   display: flex;
