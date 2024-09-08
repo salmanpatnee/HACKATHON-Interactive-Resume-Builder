@@ -8,7 +8,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto 50px;
 }
 hr {
@@ -20,12 +20,30 @@ h2 {
   font-size: 22px;
 }
 p {
-  font-size: 11px;
+  font-size: 10px;
   line-height: 1.5em;
+  margin-bottom: 1em;
 }
 a:hover {
   text-decoration: underline;
 }
+button {
+  background-color: black;
+  color: white;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  margin-top: 1em;
+}
+button:hover {
+  background-color: #003366;
+}
+
+hr {
+  border-bottom: 1px solid #cccc;
+}
+
 /* Utilities */
 .flex-container {
   display: flex;
@@ -79,18 +97,25 @@ header#main_header img {
   margin-right: 1em;
   height: auto;
 }
+
+/* Main */
 main.flex-container {
   padding: 10px;
 }
 .aside {
-  flex-basis: 35%;
+  flex-basis: 40%;
 }
-
 .main-content {
-  flex-basis: 65%;
+  flex-basis: 60%;
   padding-left: 1em;
 }
-
+#builder {
+  flex-basis: 50%;
+  padding-right: 1em;
+}
+#preview {
+  flex-basis: 50%;
+}
 ul.icon-list {
   list-style-type: none;
   font-size: 13px;
@@ -99,13 +124,14 @@ ul.icon-list {
 }
 ul.icon-list i {
   background-color: #003366;
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
   color: #fff;
-  line-height: 2em;
+  line-height: 1.8em;
   text-align: center;
-  margin-right: 0.5em;
+  margin-right: 0.2em;
+  font-size: 12px;
 }
 ul.icon-list a {
   text-decoration: none;
@@ -117,18 +143,46 @@ ul.list {
   margin-left: 1em;
   font-size: 12px;
 }
-
-button {
-  background-color: black;
-  color: white;
-  padding: 0.5em 1em;
-  border: none;
-  border-radius: 16px;
-  cursor: pointer;
-  margin-top: 1em;
+fieldset {
+  padding: 0.5em;
+  border-color: #fafafa;
+  border-radius: 4px;
+  margin-bottom: 1em;
 }
-button:hover {
-  background-color: #003366;
+legend {
+  font-weight: bold;
+  color: #003366;
+}
+.fields-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+.form-field {
+  flex-basis: 48%;
+  padding: 0 1%;
+}
+.form-field.w-100 {
+  flex-basis: 100%;
+}
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 0.5em;
+}
+input {
+  height: 26px;
+  width: 100%;
+}
+textarea {
+  width: 100%;
+  height: 50px;
+}
+.experience .form-field {
+  display: flex;
+  justify-content: space-between;
 }
 /* Responsive */
 @media (max-width: 768px) {

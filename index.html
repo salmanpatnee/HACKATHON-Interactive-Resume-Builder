@@ -17,107 +17,246 @@
     <link rel="stylesheet" href="/css/style.css " />
   </head>
   <body>
-    <div class="topbar"></div>
-    <header id="main_header">
-      <img src="/assets/salman-abdul-ghani.jpg" alt="salman-abdul-ghani" />
-      <div>
-        <h1>Salman Abdul Ghani</h1>
-        <p>Fullstack Student</p>
-      </div>
-    </header>
     <main class="flex-container">
-      <aside class="aside">
-        <h2 class="fancy-heading">About Me</h2>
-        <p>
-          <b
-            >Master of 'Google-Fu' and the eternal quest to fix bugs before they
-            fix me.</b
-          >
-        </p>
-        <ul class="icon-list">
-          <li>
-            <i class="fa fa-phone" aria-hidden="true"></i>
-            <a href="tel:+923312592386">+92-331-2592386</a>
-          </li>
-          <li>
-            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-            <a href="mailto:salmanpatni92@gmail.com">salmanpatni92@gmail.com</a>
-          </li>
-          <li>
-            <i class="fa fa-github" aria-hidden="true"></i>
-            <a href="https://github.com/salmanpatnee/" target="_blank"
-              >https://github.com/salmanpatnee/</a
-            >
-          </li>
-          <li>
-            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-            <a
-              href="https://www.linkedin.com/in/salman-a-ghani/"
-              target="_blank"
-              >https://www.linkedin.com/in/salman-a-ghani/</a
-            >
-          </li>
-        </ul>
-        <h2 class="fancy-heading">Education</h2>
-        <p>
-          <b
-            >Bachelor of Science in Computer Science (Still Figuring Out Where
-            All the Semicolons Go)</b
-          >
-          <br />
-          <small>2020 - 2024</small>
-        </p>
-        <p>
-          <b>Certifications & Workshops (A.K.A. Side Quests) </b> <br />
-          <small>2018 - 2020</small>
-        </p>
-        <h2 class="fancy-heading">Experties</h2>
-        <p><b>“Jack of all trades, master of ‘Ctrl + Z’”</b></p>
-        <ul class="list">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>TypeScript</li>
-        </ul>
-        <h2 class="fancy-heading">Languages</h2>
-        <ul class="list">
-          <li>English</li>
-          <li>Urdu</li>
-        </ul>
-      </aside>
-      <article class="main-content">
-        <h2 class="fancy-heading">Experience</h2>
-        <p>
-          <b>Turning caffeine into code and bugs into features (sometimes).</b>
-        </p>
-        <div class="experience-item">
-          <h3>Senior Code Whisperer</h3>
-          <small>Acme.ltd – Karachi, Pakistan</small>
-          <p>
-            Translated vague project requirements into actual, working code
-            (with minimal guesswork).
-          </p>
+      <section id="builder">
+        <form action="">
+          <fieldset>
+            <legend>Personal Info</legend>
+            <div class="fields-wrap">
+              <div class="form-field">
+                <label for="fullname">Fullname</label>
+                <input type="text" name="fullname" id="fullname" />
+              </div>
+              <div class="form-field">
+                <label for="tagline">Tagline</label>
+                <input type="text" name="tagline" id="tagline" />
+              </div>
+            </div>
+            <div class="fields-wrap">
+              <div class="form-field w-100">
+                <label for="bio">Bio</label>
+                <textarea name="bio" id="bio"></textarea>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Contact Info</legend>
+            <div class="fields-wrap">
+              <div class="form-field">
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone" />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" />
+              </div>
+            </div>
+            <div class="fields-wrap">
+              <div class="form-field">
+                <label for="github_url">Github</label>
+                <input type="url" name="github_url" id="github_url" />
+              </div>
+              <div class="form-field">
+                <label for="linkedin_url">Linkedin</label>
+                <input type="url" name="linkedin_url" id="linkedin_url" />
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Education</legend>
+            <div class="fields-wrap">
+              <div class="form-field">
+                <label for="education_1">Title</label>
+                <input type="text" name="education_1" id="education_1" />
+              </div>
+              <div class="form-field">
+                <label for="education_1_year">Year</label>
+                <input
+                  type="number"
+                  name="education_1_year"
+                  id="education_1_year"
+                />
+              </div>
+            </div>
+            <div class="fields-wrap">
+              <div class="form-field">
+                <label for="education_2">Title</label>
+                <input type="text" name="education_2" id="education_2" />
+              </div>
+              <div class="form-field">
+                <label for="education_2_year">Year</label>
+                <input
+                  type="number"
+                  name="education_2_year"
+                  id="education_2_year"
+                />
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Experties / Skills</legend>
+            <div class="fields-wrap">
+              <div class="form-field w-100">
+                <textarea name="skills" id="skills"></textarea>
+                <p class="help-text">Add comma separated skills</p>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Languages</legend>
+            <div class="fields-wrap">
+              <div class="form-field w-100">
+                <textarea name="languages" id="languages"></textarea>
+                <p class="help-text">Add comma separated languages</p>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Experience</legend>
+            <div class="fields-wrap experience">
+              <div class="form-field w-100">
+                <div>
+                  <label for="exp_1_title">Title</label>
+                  <input type="text" name="exp_1_title" id="exp_1_title" />
+                </div>
+                <div>
+                  <label for="exp_1_company">Company</label>
+                  <input type="text" name="exp_1_company" id="exp_1_company" />
+                </div>
+                <div>
+                  <label for="exp_1_role">Role</label>
+                  <input type="text" name="exp_1_role" id="exp_1_role" />
+                </div>
+              </div>
+              <hr />
+              <div class="form-field w-100">
+                <div>
+                  <label for="exp_2_title">Title</label>
+                  <input type="text" name="exp_2_title" id="exp_2_title" />
+                </div>
+                <div>
+                  <label for="exp_2_company">Company</label>
+                  <input type="text" name="exp_2_company" id="exp_2_company" />
+                </div>
+                <div>
+                  <label for="exp_2_role">Role</label>
+                  <input type="text" name="exp_2_role" id="exp_2_role" />
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+      <section id="preview">
+        <div class="topbar"></div>
+        <header id="main_header">
+          <img src="/assets/salman-abdul-ghani.jpg" alt="salman-abdul-ghani" />
+          <div>
+            <h1>Salman Abdul Ghani</h1>
+            <p>Fullstack Student</p>
+          </div>
+        </header>
+        <div class="flex-container">
+          <aside class="aside">
+            <h2 class="fancy-heading">About Me</h2>
+            <p>
+              <b
+                >Master of 'Google-Fu' and the eternal quest to fix bugs before
+                they fix me.</b
+              >
+            </p>
+            <ul class="icon-list">
+              <li>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <a href="tel:+923312592386">+92-331-2592386</a>
+              </li>
+              <li>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <a href="mailto:salmanpatni92@gmail.com"
+                  >salmanpatni92@gmail.com</a
+                >
+              </li>
+              <li>
+                <i class="fa fa-github" aria-hidden="true"></i>
+                <a href="https://github.com/salmanpatnee/" target="_blank"
+                  >https://github.com/salmanpatnee/</a
+                >
+              </li>
+              <li>
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                <a
+                  href="https://www.linkedin.com/in/salman-a-ghani/"
+                  target="_blank"
+                  >https://www.linkedin.com/in/salman-a-ghani/</a
+                >
+              </li>
+            </ul>
+            <h2 class="fancy-heading">Education</h2>
+            <p>
+              <b
+                >Bachelor of Science in Computer Science (Still Figuring Out
+                Where All the Semicolons Go)</b
+              >
+              <br />
+              <small>2020 - 2024</small>
+            </p>
+            <p>
+              <b>Certifications & Workshops (A.K.A. Side Quests) </b> <br />
+              <small>2018 - 2020</small>
+            </p>
+            <h2 class="fancy-heading">Experties</h2>
+            <!-- <p><b>“Jack of all trades, master of ‘Ctrl + Z’”</b></p> -->
+            <ul class="list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>TypeScript</li>
+            </ul>
+            <h2 class="fancy-heading">Languages</h2>
+            <ul class="list">
+              <li>English</li>
+              <li>Urdu</li>
+            </ul>
+          </aside>
+          <article class="main-content">
+            <h2 class="fancy-heading">Experience</h2>
+            <!-- <p>
+              <b
+                >Turning caffeine into code and bugs into features
+                (sometimes).</b
+              >
+            </p> -->
+            <div class="experience-item">
+              <h3>Senior Code Whisperer</h3>
+              <small>Acme.ltd – Karachi, Pakistan</small>
+              <p>
+                Translated vague project requirements into actual, working code
+                (with minimal guesswork).
+              </p>
+            </div>
+            <hr />
+            <div class="experience-item">
+              <h3>Lead Debugging Specialist</h3>
+              <small>Acme.ltd – Karachi, Pakistan</small>
+              <p>
+                Excelled in the fine art of bug hunting, from console.log clues
+                to full-on debugging sprints.
+              </p>
+            </div>
+            <div class="experience-item hidden">
+              <hr />
+              <h3>Junior Code Artisan</h3>
+              <small>Acme.ltd – Karachi, Pakistan</small>
+              <p>
+                Assisted in building and maintaining web applications, learning
+                the ropes of front-end and back-end development.
+              </p>
+            </div>
+            <button id="show-entries">Show More Experience</button>
+          </article>
         </div>
-        <hr />
-        <div class="experience-item">
-          <h3>Lead Debugging Specialist</h3>
-          <small>Acme.ltd – Karachi, Pakistan</small>
-          <p>
-            Excelled in the fine art of bug hunting, from console.log clues to
-            full-on debugging sprints.
-          </p>
-        </div>
-        <div class="experience-item hidden">
-          <hr />
-          <h3>Junior Code Artisan</h3>
-          <small>Acme.ltd – Karachi, Pakistan</small>
-          <p>
-            Assisted in building and maintaining web applications, learning the
-            ropes of front-end and back-end development.
-          </p>
-        </div>
-        <button id="show-entries">Show More Experience</button>
-      </article>
+      </section>
     </main>
+
     <script src="/js/index.js"></script>
   </body>
 </html>
